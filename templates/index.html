@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Justice Portal</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+    <!-- Your existing HTML content -->
+    <div class="website-heading">
+        <div class="title-container">
+            <h1>Justice Portal</h1>
+        </div>
+        <nav>
+            <!-- Your navigation content -->
+        </nav>
+    </div>
+    <!-- Your existing HTML content -->
+    <div class="chat-container">
+        <div class="chat-header">
+            <h1>Chat with Us</h1>
+        </div>
+        <div class="chat-messages" id="chat-messages">
+            <!-- Messages will be dynamically added here -->
+        </div>
+        <div class="chat-input-container">
+            <input type="text" id="user-input" placeholder="Type your message..." />
+            <button id="send-button">Send</button>
+        </div>
+    </div>
+    <!-- Bottom Right Login Section -->
+    <div class="auth-section">
+        <h2>Login</h2>
+        <input type="text" placeholder="Username" id="username">
+        <input type="password" placeholder="Password" id="password">
+        <button>Login</button>
+        <span>Don't have an account? <a href="#">Sign Up</a></span>
+    </div>
+    <!-- Link to external JavaScript file -->
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
