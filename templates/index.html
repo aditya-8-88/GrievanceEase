@@ -11,7 +11,7 @@
     <!-- Your existing HTML content -->
     <div class="website-heading">
         <div class="title-container">
-            <h1>Justice Portal</h1>
+            <h1>CivicVoice.ai</h1>
         </div>
         <nav>
             <!-- Your navigation content -->
@@ -39,6 +39,9 @@
         <span>Don't have an account? <a href="#">Sign Up</a></span>
     </div>
     <!-- Link to external JavaScript file -->
+    <script>
+        const jsonFile = "{{ json_file }}";
+    </script>
     <script src="{{ url_for('static', filename='script.js') }}"></script>
 </body>
 </html>

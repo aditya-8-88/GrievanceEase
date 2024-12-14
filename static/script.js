@@ -42,7 +42,7 @@ async function handleUserInput() {
                 headers: {
                     'Content-Type': 'application/json',
                 },
-                body: JSON.stringify({ prompt: userMessage })
+                body: JSON.stringify({ prompt: userMessage, json_file: jsonFile })
             });
 
             const data = await response.json();
